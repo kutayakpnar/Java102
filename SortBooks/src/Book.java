@@ -49,6 +49,7 @@ public class Book implements Comparable {
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        Book bk=(Book) o;
+        return this.getName().compareTo(((Book) o).getName());
     }
 }
